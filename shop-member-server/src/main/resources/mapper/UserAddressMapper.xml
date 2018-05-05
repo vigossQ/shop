@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.shop.mapper.UserAddressMapper" >
+  <resultMap id="BaseResultMap" type="cn.wolfcode.shop.domain.UserAddress" >
+    <id column="id" property="id" />
+    <result column="user_id" property="userId" />
+    <result column="consignee" property="consignee" />
+    <result column="phone" property="phone" />
+    <result column="country" property="country" />
+    <result column="province" property="province" />
+    <result column="city" property="city" />
+    <result column="district" property="district" />
+    <result column="address" property="address" />
+    <result column="zipcode" property="zipcode" />
+    <result column="status" property="status" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from user_address
+    where id = #{id}
+  </delete>
+  <insert id="insert" parameterType="cn.wolfcode.shop.domain.UserAddress" useGeneratedKeys="true" keyProperty="id" >
+    insert into user_address (user_id, consignee, phone, country, province, city, district, 
+      address, zipcode, status)
+    values (#{userId}, #{consignee}, #{phone}, #{country}, #{province}, #{city}, #{district}, 
+      #{address}, #{zipcode}, #{status})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.wolfcode.shop.domain.UserAddress" >
+    update user_address
+    set user_id = #{userId},
+      consignee = #{consignee},
+      phone = #{phone},
+      country = #{country},
+      province = #{province},
+      city = #{city},
+      district = #{district},
+      address = #{address},
+      zipcode = #{zipcode},
+      status = #{status}
+    where id = #{id}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select id, user_id, consignee, phone, country, province, city, district, address, 
+    zipcode, status
+    from user_address
+    where id = #{id}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, user_id, consignee, phone, country, province, city, district, address, 
+    zipcode, status
+    from user_address
+  </select>
+</mapper>

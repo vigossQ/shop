@@ -1,0 +1,900 @@
+2018-04-21 08:58:45,291 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 19556 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 08:58:45,300 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 08:58:45,301 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 08:58:58,490 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 14.872 seconds (JVM running for 15.483)
+2018-04-21 09:02:18,534 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 11332 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 09:02:18,538 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 09:02:18,539 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 09:02:30,230 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 12.101 seconds (JVM running for 12.688)
+2018-04-21 09:04:19,274 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog ORDER BY sort ASC 
+2018-04-21 09:04:19,300 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 09:04:19,314 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 14
+2018-04-21 09:04:19,836 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 09:04:19,837 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 09:04:19,841 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 09:04:27,423 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: UPDATE catalog SET name = ?, code = ?, sort = ?, p_id = ?, is_parent = ? WHERE id = ? 
+2018-04-21 09:04:27,424 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1112(String), 321(String), 1(Integer), 1(Long), 0(Byte), 32(Long)
+2018-04-21 09:04:27,425 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 1
+2018-04-21 09:04:27,553 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 09:04:27,554 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 09:04:27,555 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 09:58:18,021 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 09:58:18,021 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 32(Long)
+2018-04-21 09:58:18,023 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 09:58:20,549 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 09:58:20,549 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 09:58:20,551 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 09:58:21,878 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 09:58:21,879 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 32(Long)
+2018-04-21 09:58:21,881 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 09:58:24,251 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 09:58:24,252 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 09:58:24,254 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 09:58:25,154 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 09:58:25,155 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 32(Long)
+2018-04-21 09:58:25,156 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 09:58:28,646 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 09:58:28,647 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 09:58:28,648 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 09:58:30,192 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 09:58:30,193 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 13(Long)
+2018-04-21 09:58:30,198 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 10:29:12,132 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog ORDER BY sort ASC 
+2018-04-21 10:29:12,133 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 10:29:12,136 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 14
+2018-04-21 10:29:12,189 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 10:29:12,190 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 10:29:12,191 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 10:29:16,147 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog ORDER BY sort ASC 
+2018-04-21 10:29:16,148 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 10:29:16,151 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 14
+2018-04-21 10:29:16,186 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 10:29:16,187 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 10:29:16,188 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 12:58:55,161 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 12:58:55,163 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 32(Long)
+2018-04-21 12:58:55,165 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 12:58:56,100 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 12:58:56,101 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 12:58:56,104 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 12:58:59,626 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 12:58:59,627 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 32(Long)
+2018-04-21 12:58:59,628 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 12:59:01,570 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 12:59:01,571 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 12:59:01,572 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:22:01,878 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 9176 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 19:22:01,882 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 19:22:01,883 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 19:22:06,181 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 4.845 seconds (JVM running for 5.578)
+2018-04-21 19:23:35,517 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog ORDER BY sort ASC 
+2018-04-21 19:23:35,531 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 19:23:35,546 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 14
+2018-04-21 19:23:35,697 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:23:35,698 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:23:35,701 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:23:45,846 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:23:45,847 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 19:23:45,849 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 19:23:52,852 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:23:52,853 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 13(Long)
+2018-04-21 19:23:52,855 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 19:23:54,839 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:23:54,840 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 19:23:54,841 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 19:23:57,123 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:23:57,124 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 13(Long)
+2018-04-21 19:23:57,125 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 19:24:04,375 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:24:04,377 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 19:24:04,379 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 19:24:06,873 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:24:06,874 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:24:06,876 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:24:31,050 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:24:31,052 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 19:24:31,054 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 19:24:39,706 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 9764 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 19:24:39,710 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 19:24:39,710 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 19:24:44,236 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 4.935 seconds (JVM running for 5.553)
+2018-04-21 19:25:02,902 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:25:02,918 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:25:02,932 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:25:05,719 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:25:05,720 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 19:25:05,721 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 19:25:07,552 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:25:07,553 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 19:25:07,555 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 19:26:17,551 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:26:17,552 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 19:26:17,554 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 19:26:22,717 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:26:22,718 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 2(Long)
+2018-04-21 19:26:22,719 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 19:26:25,967 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:26:25,968 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:26:25,970 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:26:27,740 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:26:27,741 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 32(Long)
+2018-04-21 19:26:27,742 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 19:26:29,980 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:26:29,982 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 19:26:29,984 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 19:26:31,562 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:26:31,562 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 19:26:31,564 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 19:26:32,289 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:26:32,290 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 19:26:32,291 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 19:26:37,399 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:26:37,400 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 19:26:37,401 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 19:26:42,947 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:26:42,948 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 19:26:42,949 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 19:31:52,923 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 15344 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 19:31:52,926 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 19:31:52,927 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 19:31:57,150 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 4.632 seconds (JVM running for 5.249)
+2018-04-21 19:33:27,969 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 12176 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 19:33:27,972 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 19:33:27,973 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 19:33:36,718 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 9.183 seconds (JVM running for 9.783)
+2018-04-21 19:37:43,846 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog ORDER BY sort ASC 
+2018-04-21 19:37:43,860 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 19:37:43,875 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 14
+2018-04-21 19:38:02,932 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 5344 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 19:38:02,935 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 19:38:02,935 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 19:38:07,759 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 5.254 seconds (JVM running for 5.871)
+2018-04-21 19:38:21,082 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:38:21,098 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:38:21,112 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:38:25,853 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:38:25,854 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:38:25,856 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:38:30,190 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:38:30,191 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:38:30,193 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:38:51,792 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:38:51,793 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:38:51,794 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:38:52,712 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:38:52,712 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:38:52,714 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:38:53,501 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:38:53,502 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:38:53,504 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:44:02,351 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:44:02,352 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:44:02,353 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:44:06,504 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:44:06,505 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:44:06,507 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:44:07,614 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:44:07,615 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:44:07,616 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:44:08,848 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:44:08,849 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:44:08,850 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:44:18,356 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:44:18,358 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:44:18,359 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:44:21,280 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:44:21,281 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:44:21,282 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:46:10,905 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:46:10,906 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:46:10,908 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:48:09,945 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:48:09,946 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:48:09,947 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:48:10,930 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:48:10,930 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:48:10,932 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:48:15,486 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:48:15,488 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:48:15,491 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:48:16,215 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:48:16,216 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:48:16,217 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:48:17,240 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:48:17,242 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:48:17,244 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:48:18,043 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:48:18,044 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:48:18,045 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:48:46,886 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 9876 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 19:48:46,889 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 19:48:46,890 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 19:48:51,498 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 5.031 seconds (JVM running for 5.666)
+2018-04-21 19:49:13,044 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:49:13,060 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:49:13,071 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:49:15,685 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:49:15,686 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:49:15,688 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:49:19,991 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:49:19,992 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:49:19,995 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:49:22,678 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:49:22,678 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:49:22,680 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:50:36,231 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 14208 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 19:50:36,234 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 19:50:36,235 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 19:50:41,614 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 5.798 seconds (JVM running for 6.414)
+2018-04-21 19:50:59,426 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:50:59,441 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:50:59,453 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:51:02,928 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:51:02,928 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:51:02,930 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:51:05,752 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:51:05,754 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:51:05,755 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:51:10,664 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:51:10,665 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:51:10,667 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:51:13,155 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:51:13,156 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:51:13,158 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:51:26,343 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 19688 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 19:51:26,347 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 19:51:26,348 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 19:51:31,778 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 5.958 seconds (JVM running for 7.525)
+2018-04-21 19:52:27,366 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:52:27,385 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:52:27,401 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:52:42,262 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:52:42,263 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:52:42,266 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 19:52:44,459 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 19:52:44,460 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 19:52:44,464 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 20:13:06,593 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 16532 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 20:13:06,599 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 20:13:06,600 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 20:13:13,126 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 7.018 seconds (JVM running for 7.684)
+2018-04-21 20:13:24,038 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, catalog_id, name, sort, type from property 
+2018-04-21 20:13:24,056 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 20:13:24,069 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 7
+2018-04-21 20:15:16,322 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 20:15:16,323 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 20:15:16,325 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 20:15:18,711 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, catalog_id, name, sort, type from property 
+2018-04-21 20:15:18,712 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 20:15:18,716 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 7
+2018-04-21 20:15:25,224 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, catalog_id, name, sort, type from property 
+2018-04-21 20:15:25,225 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 20:15:25,230 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 7
+2018-04-21 20:16:01,216 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, catalog_id, name, sort, type from property 
+2018-04-21 20:16:01,216 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 20:16:01,218 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 7
+2018-04-21 20:17:35,728 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 20:17:35,729 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 20:17:35,730 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 20:17:36,971 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 20:17:36,972 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 32(Long)
+2018-04-21 20:17:36,974 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:17:37,934 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 20:17:37,936 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 20:17:37,937 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 20:17:40,424 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE id = ? 
+2018-04-21 20:17:40,425 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 32(Long)
+2018-04-21 20:17:40,427 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 20:17:40,427 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE id = ? 
+2018-04-21 20:17:40,428 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 20:17:40,429 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 20:17:40,430 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: DELETE FROM catalog WHERE id = ? 
+2018-04-21 20:17:40,431 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 32(Long)
+2018-04-21 20:17:40,433 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 1
+2018-04-21 20:17:40,433 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 20:17:40,434 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 20:17:40,435 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 20:17:40,436 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog ORDER BY sort ASC 
+2018-04-21 20:17:40,437 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 20:17:40,440 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 13
+2018-04-21 20:17:40,602 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 20:17:40,603 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 20:17:40,604 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 20:17:42,762 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 20:17:42,763 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 20:17:42,764 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 20:17:43,551 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 20:17:43,552 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 20:17:43,554 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 20:17:44,619 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 20:17:44,620 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 20:17:44,622 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 20:25:03,928 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 15488 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 20:25:03,934 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 20:25:03,935 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 20:25:09,206 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 5.762 seconds (JVM running for 6.394)
+2018-04-21 20:25:28,534 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:25:28,550 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 20:25:28,563 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:25:34,085 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:25:34,086 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 20:25:34,089 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 20:25:38,863 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:25:38,865 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 20:25:38,866 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:25:39,741 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:25:39,742 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 20:25:39,744 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 20:35:18,895 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 14452 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 20:35:18,901 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 20:35:18,901 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 20:35:25,581 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 7.203 seconds (JVM running for 7.918)
+2018-04-21 20:35:48,658 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:35:48,676 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 20:35:48,687 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:35:49,917 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:35:49,918 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 20:35:49,920 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 20:35:53,592 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:35:53,593 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 20:35:53,594 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:35:54,397 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:35:54,398 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 20:35:54,399 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 20:38:12,816 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:38:12,817 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 19(Long)
+2018-04-21 20:38:12,819 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:38:13,477 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:38:13,477 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 7(Long)
+2018-04-21 20:38:13,478 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:38:15,220 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:38:15,221 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 18(Long)
+2018-04-21 20:38:15,222 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:38:15,748 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:38:15,749 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-21 20:38:15,751 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 20:38:16,829 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:38:16,830 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 18(Long)
+2018-04-21 20:38:16,831 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:38:17,681 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:38:17,682 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-21 20:38:17,684 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 20:38:23,458 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:38:23,459 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-21 20:38:23,460 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 20:38:37,237 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 7820 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 20:38:37,244 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 20:38:37,244 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 20:38:42,387 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 5.762 seconds (JVM running for 6.49)
+2018-04-21 20:39:00,632 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:39:00,650 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 20:39:00,661 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:39:04,083 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:39:04,084 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 20:39:04,088 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 20:47:03,260 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 9088 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 20:47:03,269 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 20:47:03,270 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 20:47:09,473 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.724 seconds (JVM running for 7.412)
+2018-04-21 20:48:30,137 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:48:30,156 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 20:48:30,169 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:48:33,869 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:48:33,869 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 20:48:33,870 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:48:34,589 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:48:34,589 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 20:48:34,593 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 20:53:09,361 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:53:09,362 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 20:53:09,363 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:53:12,875 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id=? 
+2018-04-21 20:53:12,875 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 20:53:12,877 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 20:54:19,157 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 16148 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 20:54:19,163 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 20:54:19,163 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 20:54:25,791 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 7.154 seconds (JVM running for 7.885)
+2018-04-21 20:55:30,949 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 20:55:30,971 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 20:55:30,984 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:55:34,973 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 20:55:34,974 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 20:55:34,975 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:55:35,752 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 20:55:35,753 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 20:55:35,758 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 20:57:28,877 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 20:57:28,878 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 20:57:28,879 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:57:30,092 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 20:57:30,092 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 20:57:30,094 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 20:57:30,238 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 20:57:30,239 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 20:57:30,242 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 20:57:31,097 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 20:57:31,098 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 15(Long)
+2018-04-21 20:57:31,099 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:57:31,246 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 20:57:31,248 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 15(Long)
+2018-04-21 20:57:31,250 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:57:31,816 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 20:57:31,817 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 13(Long)
+2018-04-21 20:57:31,818 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:57:31,965 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 20:57:31,966 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 13(Long)
+2018-04-21 20:57:31,967 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:57:32,597 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 20:57:32,597 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 20:57:32,599 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:57:33,279 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 20:57:33,280 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 20:57:33,282 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 20:57:34,434 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 20:57:34,434 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 20:57:34,436 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 20:57:41,600 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 20:57:41,601 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 22(Long)
+2018-04-21 20:57:41,603 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 20:59:17,828 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 20:59:17,829 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 20:59:17,831 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 20:59:22,182 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 20:59:22,183 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 20:59:22,186 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 20:59:23,285 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 20:59:23,286 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 22(Long)
+2018-04-21 20:59:23,287 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 20:59:29,041 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 20:59:29,042 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 20:59:29,043 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 21:01:18,932 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:01:18,933 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 22(Long)
+2018-04-21 21:01:18,935 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 21:02:09,868 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:02:09,869 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 21(Long)
+2018-04-21 21:02:09,870 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:02:17,173 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:02:17,174 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:02:17,176 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 21:02:32,928 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:02:32,929 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 21(Long)
+2018-04-21 21:02:32,930 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:03:23,526 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:03:23,526 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:03:23,527 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:03:24,723 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:03:24,724 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 21:03:24,725 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 21:03:24,981 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:03:24,981 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 21:03:24,984 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 21:03:25,117 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:03:25,118 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 21:03:25,119 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 21:03:26,971 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:03:26,971 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 13(Long)
+2018-04-21 21:03:26,972 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:03:27,121 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:03:27,122 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 13(Long)
+2018-04-21 21:03:27,124 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:03:28,657 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:03:28,658 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:03:28,660 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:03:29,574 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:03:29,575 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 22(Long)
+2018-04-21 21:03:29,577 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 21:09:16,783 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 2496 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 21:09:16,788 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 21:09:16,788 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 21:09:26,787 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 8908 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 21:09:26,791 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 21:09:26,792 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 21:09:32,125 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 5.767 seconds (JVM running for 6.396)
+2018-04-21 21:09:43,769 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:09:43,786 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:09:43,795 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:09:44,529 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:09:44,529 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 21:09:44,532 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 21:09:44,688 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:09:44,689 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 21:09:44,691 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 21:09:45,232 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:09:45,232 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 13(Long)
+2018-04-21 21:09:45,234 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:09:45,375 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:09:45,376 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 13(Long)
+2018-04-21 21:09:45,377 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:09:46,094 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:09:46,095 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:09:46,097 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:09:47,299 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:09:47,300 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:09:47,303 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 21:12:41,162 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:12:41,163 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:12:41,165 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:12:45,349 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:12:45,350 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:12:45,351 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:12:46,304 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:12:46,304 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:12:46,306 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 21:13:42,211 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:13:42,212 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:13:42,213 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:13:46,116 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:13:46,117 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:13:46,118 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:13:47,044 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:13:47,045 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:13:47,046 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 21:13:50,172 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:13:50,173 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 21(Long)
+2018-04-21 21:13:50,174 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:14:46,531 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:14:46,532 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:14:46,533 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:14:49,816 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:14:49,818 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:14:49,821 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:14:50,567 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:14:50,568 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:14:50,571 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:14:51,903 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:14:51,904 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:14:51,905 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 21:18:28,051 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 11832 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 21:18:28,057 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 21:18:28,058 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 21:18:34,567 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 7.038 seconds (JVM running for 7.725)
+2018-04-21 21:18:58,708 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:18:58,727 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:18:58,739 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:19:01,537 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:19:01,538 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:19:01,542 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:19:18,679 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:19:18,680 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:19:18,681 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 21:19:58,925 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:19:58,926 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:19:58,928 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:20:02,223 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:20:02,224 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:20:02,227 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:20:11,893 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:20:11,894 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 22(Long)
+2018-04-21 21:20:11,897 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 21:21:32,436 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:21:32,437 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:21:32,439 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:21:36,371 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:21:36,372 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:21:36,374 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:21:37,316 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:21:37,317 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:21:37,319 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 21:21:44,075 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 15592 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 21:21:44,080 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 21:21:44,081 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 21:21:50,718 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 7.229 seconds (JVM running for 8.003)
+2018-04-21 21:22:00,191 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:22:00,209 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:22:00,221 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:22:03,206 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:22:03,207 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:22:03,211 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:22:04,345 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:22:04,346 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:22:04,347 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 21:22:07,750 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:22:07,751 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:22:07,754 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 21:29:00,221 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 12252 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 21:29:00,227 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 21:29:00,228 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 21:29:06,347 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.681 seconds (JVM running for 7.393)
+2018-04-21 21:29:21,492 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:29:21,510 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:29:21,520 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:29:26,080 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:29:26,081 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:29:26,085 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:29:27,286 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:29:27,288 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:29:27,289 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 21:29:51,434 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:29:51,434 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:29:51,436 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 21:32:03,579 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 8748 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 21:32:03,585 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 21:32:03,586 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 21:32:10,366 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 7.304 seconds (JVM running for 8.002)
+2018-04-21 21:32:24,194 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:32:24,211 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:32:24,222 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:32:25,276 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:32:25,277 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 21:32:25,280 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 21:32:25,956 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:32:25,957 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 21:32:25,959 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 21:32:26,085 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:32:26,086 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 21:32:26,087 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 21:32:28,375 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:32:28,376 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:32:28,378 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:32:29,371 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:32:29,372 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:32:29,373 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 21:32:39,173 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: UPDATE property_value SET property_id = ?, value = ? WHERE id = ? 
+2018-04-21 21:32:39,174 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long), 111(String), 38(Long)
+2018-04-21 21:32:39,176 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 1
+2018-04-21 21:32:39,177 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: UPDATE property_value SET property_id = ?, value = ? WHERE id = ? 
+2018-04-21 21:32:39,179 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long), 222(String), 39(Long)
+2018-04-21 21:32:39,181 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 1
+2018-04-21 21:32:39,182 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: UPDATE property_value SET property_id = ?, value = ? WHERE id = ? 
+2018-04-21 21:32:39,183 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long), 333(String), 40(Long)
+2018-04-21 21:32:39,184 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 1
+2018-04-21 21:32:39,184 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: UPDATE property_value SET property_id = ?, value = ? WHERE id = ? 
+2018-04-21 21:32:39,185 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long), 444(String), null
+2018-04-21 21:32:39,186 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 0
+2018-04-21 21:32:39,187 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: UPDATE property_value SET property_id = ?, value = ? WHERE id = ? 
+2018-04-21 21:32:39,187 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long), 555(String), null
+2018-04-21 21:32:39,189 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 0
+2018-04-21 21:32:41,375 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:32:41,376 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:32:41,377 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 21:32:59,636 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 12848 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 21:32:59,642 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 21:32:59,642 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 21:33:05,451 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.344 seconds (JVM running for 7.051)
+2018-04-21 21:33:11,228 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:33:11,248 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:33:11,257 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:33:14,105 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:33:14,106 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 13(Long)
+2018-04-21 21:33:14,107 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:33:16,808 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:33:16,810 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:33:16,813 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:33:17,935 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:33:17,936 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:33:17,937 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-21 21:33:28,622 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: UPDATE property_value SET property_id = ?, value = ? WHERE id = ? 
+2018-04-21 21:33:28,623 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long), 1111(String), 38(Long)
+2018-04-21 21:33:28,625 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 1
+2018-04-21 21:33:28,626 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: UPDATE property_value SET property_id = ?, value = ? WHERE id = ? 
+2018-04-21 21:33:28,627 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long), 2222(String), 39(Long)
+2018-04-21 21:33:28,629 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 1
+2018-04-21 21:33:28,630 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: UPDATE property_value SET property_id = ?, value = ? WHERE id = ? 
+2018-04-21 21:33:28,631 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long), 3333(String), 40(Long)
+2018-04-21 21:33:28,632 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 1
+2018-04-21 21:33:28,633 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: INSERT INTO property_value (property_id, value) VALUES (?, ?) 
+2018-04-21 21:33:28,634 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long), 4(String)
+2018-04-21 21:33:28,635 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 1
+2018-04-21 21:33:28,636 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: INSERT INTO property_value (property_id, value) VALUES (?, ?) 
+2018-04-21 21:33:28,637 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long), 555(String)
+2018-04-21 21:33:28,639 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 1
+2018-04-21 21:33:30,832 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:33:30,833 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:33:30,835 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-21 21:36:17,990 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 9736 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 21:36:17,995 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 21:36:17,995 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 21:36:24,959 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 7.467 seconds (JVM running for 8.154)
+2018-04-21 21:37:44,122 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:37:44,140 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:37:44,151 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:37:47,414 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:37:47,414 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:37:47,418 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:37:48,024 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:37:48,025 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:37:48,028 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-21 21:37:56,221 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:37:56,222 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:37:56,224 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-21 21:38:32,744 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:38:32,745 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:38:32,746 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:38:35,993 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:38:35,994 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:38:35,996 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:38:36,862 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:38:36,863 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:38:36,864 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-21 21:38:38,083 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: DELETE FROM property_value WHERE id = ? 
+2018-04-21 21:38:38,084 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 48(Long)
+2018-04-21 21:38:38,086 DEBUG (BaseJdbcLogger.java:181)- <==    Updates: 1
+2018-04-21 21:38:42,041 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, property_id, value FROM property_value WHERE property_id = ? 
+2018-04-21 21:38:42,042 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:38:42,044 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:49:57,226 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 7876 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 21:49:57,231 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 21:49:57,232 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 21:50:03,361 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.716 seconds (JVM running for 7.467)
+2018-04-21 21:50:13,798 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:50:13,824 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:50:13,841 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 21:50:13,846 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT count(id) FROM property WHERE catalog_id = ? 
+2018-04-21 21:50:13,847 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 21:50:13,849 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 21:50:13,854 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT count(id) FROM property WHERE catalog_id = ? 
+2018-04-21 21:50:13,854 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 2(Long)
+2018-04-21 21:50:13,856 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 21:50:18,631 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:50:18,632 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 21:50:18,635 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 21:50:18,637 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT count(id) FROM property WHERE catalog_id = ? 
+2018-04-21 21:50:18,637 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 13(Long)
+2018-04-21 21:50:18,638 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 21:50:18,640 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT count(id) FROM property WHERE catalog_id = ? 
+2018-04-21 21:50:18,640 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 15(Long)
+2018-04-21 21:50:18,641 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 21:50:20,924 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:50:20,925 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 13(Long)
+2018-04-21 21:50:20,928 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 21:50:20,930 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT count(id) FROM property WHERE catalog_id = ? 
+2018-04-21 21:50:20,931 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:50:20,932 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 21:50:20,935 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT count(id) FROM property WHERE catalog_id = ? 
+2018-04-21 21:50:20,935 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:50:20,936 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 21:50:21,643 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:50:21,644 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 15(Long)
+2018-04-21 21:50:21,645 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:50:23,763 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:50:23,764 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:50:23,766 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:50:24,445 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:50:24,446 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 23(Long)
+2018-04-21 21:50:24,448 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:50:25,386 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:50:25,387 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 13(Long)
+2018-04-21 21:50:25,390 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 21:50:35,061 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:50:35,062 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:50:35,065 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 21:50:50,126 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 928 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 21:50:50,133 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 21:50:50,133 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 21:50:56,957 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 7.498 seconds (JVM running for 8.302)
+2018-04-21 21:51:02,596 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:51:02,616 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:51:02,629 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 21:51:04,629 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:51:04,631 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 21:51:04,633 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 21:51:05,813 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:51:05,814 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:51:05,816 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 21:51:06,743 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:51:06,744 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 21:51:06,746 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 21:51:09,327 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:51:09,328 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 13(Long)
+2018-04-21 21:51:09,330 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 21:51:10,778 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:51:10,779 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:51:10,782 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 21:51:20,654 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:51:20,655 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:51:20,657 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 21:52:48,509 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:52:48,510 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:52:48,511 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:52:51,127 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:52:51,127 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:52:51,131 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 21:52:52,354 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:52:52,355 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:52:52,356 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:52:56,094 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM property WHERE catalog_id = ? 
+2018-04-21 21:52:56,095 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:52:56,098 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 21:52:57,503 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:52:57,504 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 1(Long)
+2018-04-21 21:52:57,505 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 21:52:58,780 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:52:58,781 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 9(Long)
+2018-04-21 21:52:58,783 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 21:53:00,474 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:53:00,475 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 13(Long)
+2018-04-21 21:53:00,477 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 21:53:01,242 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:53:01,242 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 15(Long)
+2018-04-21 21:53:01,243 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:53:01,883 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:53:01,885 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 13(Long)
+2018-04-21 21:53:01,887 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 21:53:03,438 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:53:03,439 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 17(Long)
+2018-04-21 21:53:03,441 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 0
+2018-04-21 21:53:04,170 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE p_id = ? ORDER BY sort ASC 
+2018-04-21 21:53:04,171 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 13(Long)
+2018-04-21 21:53:04,172 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-21 22:19:14,038 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 17032 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 22:19:14,043 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 22:19:14,044 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 22:19:21,624 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 8.092 seconds (JVM running for 8.772)
+2018-04-21 22:19:40,613 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select count(p.id) from product p 
+2018-04-21 22:19:40,631 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 22:19:40,645 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 22:19:40,646 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id order by p.id desc limit ?,? 
+2018-04-21 22:19:40,647 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 0(Integer), 5(Integer)
+2018-04-21 22:19:40,652 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-21 22:19:43,173 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select count(p.id) from product p 
+2018-04-21 22:19:43,175 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 22:19:43,177 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 22:19:43,178 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id order by p.id desc limit ?,? 
+2018-04-21 22:19:43,178 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 5(Integer), 5(Integer)
+2018-04-21 22:19:43,183 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-21 22:19:43,749 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select count(p.id) from product p 
+2018-04-21 22:19:43,750 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 22:19:43,751 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 22:19:43,751 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id order by p.id desc limit ?,? 
+2018-04-21 22:19:43,752 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 10(Integer), 5(Integer)
+2018-04-21 22:19:43,754 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-21 22:19:44,130 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select count(p.id) from product p 
+2018-04-21 22:19:44,130 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 22:19:44,132 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 22:19:44,133 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id order by p.id desc limit ?,? 
+2018-04-21 22:19:44,134 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 15(Integer), 5(Integer)
+2018-04-21 22:19:44,139 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-21 22:19:45,149 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select count(p.id) from product p 
+2018-04-21 22:19:45,150 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 22:19:45,151 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 22:19:45,152 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id order by p.id desc limit ?,? 
+2018-04-21 22:19:45,152 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 10(Integer), 5(Integer)
+2018-04-21 22:19:45,155 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-21 22:19:45,877 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select count(p.id) from product p 
+2018-04-21 22:19:45,878 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 22:19:45,878 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 22:19:45,879 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id order by p.id desc limit ?,? 
+2018-04-21 22:19:45,880 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 5(Integer), 5(Integer)
+2018-04-21 22:19:45,882 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-21 22:19:46,289 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select count(p.id) from product p 
+2018-04-21 22:19:46,290 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 22:19:46,292 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 22:19:46,293 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id order by p.id desc limit ?,? 
+2018-04-21 22:19:46,294 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 0(Integer), 5(Integer)
+2018-04-21 22:19:46,296 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-21 22:23:15,337 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select count(p.id) from product p 
+2018-04-21 22:23:15,337 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 22:23:15,338 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 22:23:15,339 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id order by p.id desc limit ?,? 
+2018-04-21 22:23:15,340 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 0(Integer), 5(Integer)
+2018-04-21 22:23:15,344 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-21 22:23:24,870 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select count(p.id) from product p 
+2018-04-21 22:23:24,871 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 22:23:24,872 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 22:23:24,872 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id order by p.id desc limit ?,? 
+2018-04-21 22:23:24,873 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 5(Integer), 5(Integer)
+2018-04-21 22:23:24,875 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-21 22:23:26,161 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select count(p.id) from product p 
+2018-04-21 22:23:26,162 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 22:23:26,163 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-21 22:23:26,163 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id order by p.id desc limit ?,? 
+2018-04-21 22:23:26,164 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 0(Integer), 5(Integer)
+2018-04-21 22:23:26,166 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-21 22:23:37,962 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog ORDER BY sort ASC 
+2018-04-21 22:23:37,963 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 22:23:37,965 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 13
+2018-04-21 22:23:37,974 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, name, created_date, sort, logo, description, url from brand 
+2018-04-21 22:23:37,975 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 22:23:37,979 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 17
+2018-04-21 22:28:08,648 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 16156 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-21 22:28:08,654 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-21 22:28:08,655 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-21 22:28:14,390 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.241 seconds (JVM running for 7.014)
+2018-04-21 22:30:47,480 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog ORDER BY sort ASC 
+2018-04-21 22:30:47,499 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 22:30:47,516 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 13
+2018-04-21 22:30:47,536 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select id, name, created_date, sort, logo, description, url from brand 
+2018-04-21 22:30:47,536 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-21 22:30:47,544 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 17

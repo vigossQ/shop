@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.shop.mapper.ProductSkuMapper">
+    <resultMap id="BaseResultMap" type="cn.wolfcode.shop.domain.ProductSku">
+        <id column="id" property="id"/>
+        <result column="product_id" property="productId"/>
+        <result column="code" property="code"/>
+        <result column="price" property="price"/>
+        <collection property="productSkuPropertyList" ofType="productSkuProperty" column="id"
+                    select="cn.wolfcode.shop.mapper.ProductSkuPropertyMapper.getByProductSkuId"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        DELETE FROM product_sku
+        WHERE id = #{id}
+    </delete>
+    <insert id="insert" parameterType="cn.wolfcode.shop.domain.ProductSku" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO product_sku (product_id, code, price)
+        VALUES (#{productId}, #{code}, #{price})
+    </insert>
+    <update id="updateByPrimaryKey" parameterType="cn.wolfcode.shop.domain.ProductSku">
+        UPDATE product_sku
+        SET product_id = #{productId},
+            code       = #{code},
+            price      = #{price}
+        WHERE id = #{id}
+    </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        SELECT
+            id,
+            product_id,
+            code,
+            price
+        FROM product_sku
+        WHERE id = #{id}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT
+            id,
+            product_id,
+            code,
+            price
+        FROM product_sku
+    </select>
+    <select id="getSkuList" resultMap="BaseResultMap">
+        SELECT
+            id,
+            product_id,
+            code,
+            price
+        FROM product_sku
+        WHERE product_id = #{productId}
+    </select>
+</mapper>

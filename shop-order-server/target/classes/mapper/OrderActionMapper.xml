@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.shop.mapper.OrderActionMapper">
+    <resultMap id="BaseResultMap" type="cn.wolfcode.shop.domain.OrderAction">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="order_id" property="orderId" jdbcType="BIGINT"/>
+        <result column="action_user" property="actionUser" jdbcType="VARCHAR"/>
+        <result column="order_status" property="orderStatus" jdbcType="TINYINT"/>
+        <result column="flow_status" property="flowStatus" jdbcType="TINYINT"/>
+        <result column="pay_status" property="payStatus" jdbcType="TINYINT"/>
+        <result column="action_place" property="actionPlace" jdbcType="CHAR"/>
+        <result column="action_note" property="actionNote" jdbcType="VARCHAR"/>
+        <result column="action_time" property="actionTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        DELETE FROM order_action
+        WHERE id = #{id,jdbcType=BIGINT}
+    </delete>
+    <insert id="insert" parameterType="cn.wolfcode.shop.domain.OrderAction" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO order_action (order_id, action_user, order_status,
+                                  flow_status, pay_status, action_place,
+                                  action_note, action_time)
+        VALUES (#{orderId,jdbcType=BIGINT}, #{actionUser,jdbcType=VARCHAR}, #{orderStatus,jdbcType=TINYINT},
+                #{flowStatus,jdbcType=TINYINT}, #{payStatus,jdbcType=TINYINT}, #{actionPlace,jdbcType=CHAR},
+                #{actionNote,jdbcType=VARCHAR}, #{actionTime,jdbcType=TIMESTAMP})
+    </insert>
+    <update id="updateByPrimaryKey" parameterType="cn.wolfcode.shop.domain.OrderAction">
+        UPDATE order_action
+        SET order_id     = #{orderId,jdbcType=BIGINT},
+            action_user  = #{actionUser,jdbcType=VARCHAR},
+            order_status = #{orderStatus,jdbcType=TINYINT},
+            flow_status  = #{flowStatus,jdbcType=TINYINT},
+            pay_status   = #{payStatus,jdbcType=TINYINT},
+            action_place = #{actionPlace,jdbcType=CHAR},
+            action_note  = #{actionNote,jdbcType=VARCHAR},
+            action_time  = #{actionTime,jdbcType=TIMESTAMP}
+        WHERE id = #{id,jdbcType=BIGINT}
+    </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        SELECT
+            id,
+            order_id,
+            action_user,
+            order_status,
+            flow_status,
+            pay_status,
+            action_place,
+            action_note,
+            action_time
+        FROM order_action
+        WHERE id = #{id,jdbcType=BIGINT}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT
+            id,
+            order_id,
+            action_user,
+            order_status,
+            flow_status,
+            pay_status,
+            action_place,
+            action_note,
+            action_time
+        FROM order_action
+    </select>
+    <select id="getOrderAction" resultMap="BaseResultMap">
+        SELECT *
+        FROM order_action
+        WHERE order_id = #{orderId}
+    </select>
+</mapper>

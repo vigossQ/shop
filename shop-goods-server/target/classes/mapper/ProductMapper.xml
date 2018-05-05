@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.shop.mapper.ProductMapper" >
+  <resultMap id="BaseResultMap" type="cn.wolfcode.shop.domain.Product" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="code" property="code" jdbcType="VARCHAR" />
+    <result column="market_price" property="marketPrice" jdbcType="DECIMAL" />
+    <result column="base_price" property="basePrice" jdbcType="DECIMAL" />
+    <result column="created_date" property="createdDate" jdbcType="TIMESTAMP" />
+    <result column="last_modified_date" property="lastModifiedDate" jdbcType="TIMESTAMP" />
+    <result column="image" property="image" jdbcType="VARCHAR" />
+    <result column="keyword" property="keyword" jdbcType="VARCHAR" />
+    <result column="label" property="label" jdbcType="VARCHAR" />
+    <association property="brand" javaType="brand">
+      <id property="id" column="bid"/>
+      <result property="name" column="bname"/>
+    </association>
+    <association property="catalog" javaType="catalog">
+      <id property="id" column="cid"/>
+      <result property="name" column="cname"/>
+    </association>
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from product
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="cn.wolfcode.shop.domain.Product" useGeneratedKeys="true" keyProperty="id" >
+    insert into product (name, code, catalog_id,
+      brand_id, market_price, base_price,
+      created_date, last_modified_date, image, 
+      keyword, label)
+    values (#{name,jdbcType=VARCHAR}, #{code,jdbcType=VARCHAR}, #{catalog.id,jdbcType=BIGINT},
+      #{brand.id,jdbcType=BIGINT}, #{marketPrice,jdbcType=DECIMAL}, #{basePrice,jdbcType=DECIMAL},
+      #{createdDate,jdbcType=TIMESTAMP}, #{lastModifiedDate,jdbcType=TIMESTAMP}, #{image,jdbcType=VARCHAR}, 
+      #{keyword,jdbcType=VARCHAR}, #{label,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.wolfcode.shop.domain.Product" >
+    update product
+    set name = #{name,jdbcType=VARCHAR},
+      code = #{code,jdbcType=VARCHAR},
+      catalog_id = #{catalog.id,jdbcType=BIGINT},
+      brand_id = #{brand.id,jdbcType=BIGINT},
+      market_price = #{marketPrice,jdbcType=DECIMAL},
+      base_price = #{basePrice,jdbcType=DECIMAL},
+      created_date = #{createdDate,jdbcType=TIMESTAMP},
+      last_modified_date = #{lastModifiedDate,jdbcType=TIMESTAMP},
+      image = #{image,jdbcType=VARCHAR},
+      keyword = #{keyword,jdbcType=VARCHAR},
+      label = #{label,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    <include refid="BaseSelect"/>
+    where p.id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    <include refid="BaseSelect"/>
+  </select>
+
+  <select id="queryCount" resultType="int">
+    select count(p.id) from product p
+    <include refid="BaseWhere"></include>
+  </select>
+
+  <select id="queryList" resultMap="BaseResultMap">
+    <include refid="BaseSelect"/>
+    <include refid="BaseWhere"></include>
+    order by p.id desc
+    limit #{start},#{pageSize}
+  </select>
+
+  <sql id="BaseWhere">
+    <if test="keyword != null">
+      <where>
+        p.name like #{keyword} or p.code like #{keyword}
+      </where>
+    </if>
+  </sql>
+  <sql id="BaseSelect">
+    select p.id,p.name,p.code,p.market_price,p.base_price,
+            b.id as bid,b.name as bname,
+            c.id as cid,c.name as cname
+    from product p
+    left join brand b on p.brand_id = b.id
+    left join catalog c on p.catalog_id = c.id
+  </sql>
+</mapper>

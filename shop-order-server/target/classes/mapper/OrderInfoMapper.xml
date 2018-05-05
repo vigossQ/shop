@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.shop.mapper.OrderInfoMapper">
+    <resultMap id="BaseResultMap" type="cn.wolfcode.shop.domain.OrderInfo">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="order_sn" property="orderSn" jdbcType="VARCHAR"/>
+        <result column="user_id" property="userId" jdbcType="BIGINT"/>
+        <result column="order_amount" property="orderAmount" jdbcType="DECIMAL"/>
+        <result column="pay_type" property="payType" jdbcType="TINYINT"/>
+        <result column="order_status" property="orderStatus" jdbcType="TINYINT"/>
+        <result column="flow_status" property="flowStatus" jdbcType="TINYINT"/>
+        <result column="pay_status" property="payStatus" jdbcType="TINYINT"/>
+        <result column="order_time" property="orderTime" jdbcType="TIMESTAMP"/>
+        <result column="phone" property="phone" jdbcType="VARCHAR"/>
+        <result column="consignee" property="consignee" jdbcType="VARCHAR"/>
+        <result column="country" property="country" jdbcType="VARCHAR"/>
+        <result column="province" property="province" jdbcType="VARCHAR"/>
+        <result column="city" property="city" jdbcType="VARCHAR"/>
+        <result column="district" property="district" jdbcType="VARCHAR"/>
+        <result column="address" property="address" jdbcType="VARCHAR"/>
+        <result column="zipcode" property="zipcode" jdbcType="VARCHAR"/>
+        <collection property="orderProductList" ofType="orderProduct" column="id"
+                    select="cn.wolfcode.shop.mapper.OrderProductMapper.getOrderProduct"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        DELETE FROM order_info
+        WHERE id = #{id,jdbcType=BIGINT}
+    </delete>
+    <insert id="insert" parameterType="cn.wolfcode.shop.domain.OrderInfo" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO order_info (order_sn, user_id, order_amount,
+                                order_status, flow_status, pay_status,
+                                order_time, phone, consignee,
+                                country, province, city,
+                                district, address, zipcode, pay_type
+        )
+        VALUES (#{orderSn,jdbcType=VARCHAR}, #{userId,jdbcType=BIGINT}, #{orderAmount,jdbcType=DECIMAL},
+                                             #{orderStatus,jdbcType=TINYINT}, #{flowStatus,jdbcType=TINYINT}, #{payStatus,jdbcType=TINYINT},
+                                             #{orderTime,jdbcType=TIMESTAMP}, #{phone,jdbcType=VARCHAR}, #{consignee,jdbcType=VARCHAR},
+                                             #{country,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR}, #{city,jdbcType=VARCHAR},
+                #{district,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{zipcode,jdbcType=VARCHAR}, #{payType,jdbcType=TINYINT}
+        )
+    </insert>
+    <update id="updateByPrimaryKey" parameterType="cn.wolfcode.shop.domain.OrderInfo">
+        UPDATE order_info
+        SET order_sn     = #{orderSn,jdbcType=VARCHAR},
+            user_id      = #{userId,jdbcType=BIGINT},
+            order_amount = #{orderAmount,jdbcType=DECIMAL},
+            order_status = #{orderStatus,jdbcType=TINYINT},
+            flow_status  = #{flowStatus,jdbcType=TINYINT},
+            pay_type     = #{payType,jdbcType=TINYINT},
+            pay_status   = #{payStatus,jdbcType=TINYINT},
+            order_time   = #{orderTime,jdbcType=TIMESTAMP},
+            phone        = #{phone,jdbcType=VARCHAR},
+            consignee    = #{consignee,jdbcType=VARCHAR},
+            country      = #{country,jdbcType=VARCHAR},
+            province     = #{province,jdbcType=VARCHAR},
+            city         = #{city,jdbcType=VARCHAR},
+            district     = #{district,jdbcType=VARCHAR},
+            address      = #{address,jdbcType=VARCHAR},
+            zipcode      = #{zipcode,jdbcType=VARCHAR}
+        WHERE id = #{id,jdbcType=BIGINT}
+    </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        SELECT
+            id,
+            order_sn,
+            user_id,
+            order_amount,
+            order_status,
+            flow_status,
+            pay_status,
+            order_time,
+            phone,
+            consignee,
+            country,
+            province,
+            city,
+            district,
+            address,
+            zipcode,
+            pay_type
+        FROM order_info
+        WHERE id = #{id,jdbcType=BIGINT}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT
+            id,
+            order_sn,
+            user_id,
+            order_amount,
+            order_status,
+            flow_status,
+            pay_status,
+            order_time,
+            phone,
+            consignee,
+            country,
+            province,
+            city,
+            district,
+            address,
+            zipcode,
+            pay_type
+        FROM order_info
+    </select>
+
+    <sql id="BaseWhere">
+        <choose>
+            <when test="keyword != null">
+                <where>order_sn like #{keyword}</where>
+            </when>
+        </choose>
+    </sql>
+    <select id="queryCount" resultType="int">
+        select count(id) from order_info
+        <include refid="BaseWhere"/>
+    </select>
+    <select id="queryList" resultMap="BaseResultMap">
+        select id,order_sn,pay_type,order_status,flow_status,pay_status,order_time,consignee,phone,order_amount
+        from order_info
+        <include refid="BaseWhere"/>
+        order by id desc
+        limit #{start},#{pageSize}
+    </select>
+</mapper>

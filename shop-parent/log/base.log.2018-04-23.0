@@ -1,0 +1,337 @@
+2018-04-23 10:06:40,043 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 9184 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 10:06:40,057 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 10:06:40,058 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 10:07:10,320 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 33.507 seconds (JVM running for 37.758)
+2018-04-23 10:07:43,948 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select count(p.id) from product p 
+2018-04-23 10:07:43,967 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-23 10:07:43,978 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 10:07:43,980 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id order by p.id desc limit ?,? 
+2018-04-23 10:07:43,981 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 0(Integer), 5(Integer)
+2018-04-23 10:07:43,985 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-23 10:07:45,111 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id where p.id = ? 
+2018-04-23 10:07:45,112 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 35(Long)
+2018-04-23 10:07:45,114 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 10:07:45,122 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM sku_property WHERE catalog_id = ? 
+2018-04-23 10:07:45,123 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 10:07:45,124 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-23 10:07:46,582 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, sku_property_id, value FROM sku_property_value WHERE sku_property_id = ? 
+2018-04-23 10:07:46,583 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 4(Long)
+2018-04-23 10:07:46,585 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-23 10:07:46,591 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, type, sort FROM sku_property WHERE id = ? 
+2018-04-23 10:07:46,592 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 4(Long)
+2018-04-23 10:07:46,593 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 10:07:46,910 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, sku_property_id, value FROM sku_property_value WHERE sku_property_id = ? 
+2018-04-23 10:07:46,911 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 3(Long)
+2018-04-23 10:07:46,913 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-23 10:07:46,919 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, type, sort FROM sku_property WHERE id = ? 
+2018-04-23 10:07:46,920 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 3(Long)
+2018-04-23 10:07:46,921 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 10:14:21,718 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 20036 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 10:14:21,723 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 10:14:21,723 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 10:14:27,210 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 5.979 seconds (JVM running for 6.678)
+2018-04-23 10:22:15,533 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 1088 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 10:22:15,539 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 10:22:15,539 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 10:22:23,068 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 8.028 seconds (JVM running for 8.661)
+2018-04-23 10:29:16,512 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 17480 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 10:29:16,517 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 10:29:16,518 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 10:29:22,368 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.348 seconds (JVM running for 7.038)
+2018-04-23 10:30:10,712 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select count(p.id) from product p 
+2018-04-23 10:30:10,729 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-23 10:30:10,739 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 10:30:10,741 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id order by p.id desc limit ?,? 
+2018-04-23 10:30:10,742 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 0(Integer), 5(Integer)
+2018-04-23 10:30:10,746 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-23 10:30:12,210 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id where p.id = ? 
+2018-04-23 10:30:12,211 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 35(Long)
+2018-04-23 10:30:12,212 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 10:30:12,220 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM sku_property WHERE catalog_id = ? 
+2018-04-23 10:30:12,221 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 10:30:12,223 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-23 10:30:13,550 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, sku_property_id, value FROM sku_property_value WHERE sku_property_id = ? 
+2018-04-23 10:30:13,551 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 4(Long)
+2018-04-23 10:30:13,553 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-23 10:30:13,558 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, type, sort FROM sku_property WHERE id = ? 
+2018-04-23 10:30:13,559 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 4(Long)
+2018-04-23 10:30:13,560 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 10:30:13,862 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, sku_property_id, value FROM sku_property_value WHERE sku_property_id = ? 
+2018-04-23 10:30:13,863 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 3(Long)
+2018-04-23 10:30:13,865 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-23 10:30:13,870 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, type, sort FROM sku_property WHERE id = ? 
+2018-04-23 10:30:13,871 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 3(Long)
+2018-04-23 10:30:13,873 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 10:39:10,397 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 7156 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 10:39:10,403 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 10:39:10,403 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 10:39:16,039 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.153 seconds (JVM running for 6.869)
+2018-04-23 11:53:39,289 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 12960 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 11:53:39,295 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 11:53:39,295 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 11:53:47,951 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 9.182 seconds (JVM running for 9.863)
+2018-04-23 11:58:56,858 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 3316 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 11:58:56,865 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 11:58:56,865 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 11:59:04,369 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 8.026 seconds (JVM running for 8.73)
+2018-04-23 12:00:11,184 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 9884 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 12:00:11,190 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 12:00:11,191 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 12:00:19,553 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 8.877 seconds (JVM running for 9.568)
+2018-04-23 12:00:30,225 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 19724 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 12:00:30,230 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 12:00:30,231 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 12:00:36,926 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 7.279 seconds (JVM running for 8.05)
+2018-04-23 12:00:46,672 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select count(p.id) from product p 
+2018-04-23 12:00:46,690 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-23 12:00:46,704 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 12:00:46,705 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id order by p.id desc limit ?,? 
+2018-04-23 12:00:46,706 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 0(Integer), 5(Integer)
+2018-04-23 12:00:46,714 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-23 12:00:47,755 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id where p.id = ? 
+2018-04-23 12:00:47,756 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 35(Long)
+2018-04-23 12:00:47,758 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 12:00:47,766 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM sku_property WHERE catalog_id = ? 
+2018-04-23 12:00:47,766 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 12:00:47,768 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-23 12:00:49,646 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, sku_property_id, value FROM sku_property_value WHERE sku_property_id = ? 
+2018-04-23 12:00:49,647 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 4(Long)
+2018-04-23 12:00:49,648 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-23 12:00:49,654 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, type, sort FROM sku_property WHERE id = ? 
+2018-04-23 12:00:49,654 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 4(Long)
+2018-04-23 12:00:49,655 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 12:00:50,137 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, sku_property_id, value FROM sku_property_value WHERE sku_property_id = ? 
+2018-04-23 12:00:50,137 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 3(Long)
+2018-04-23 12:00:50,139 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-23 12:00:50,144 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, type, sort FROM sku_property WHERE id = ? 
+2018-04-23 12:00:50,145 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 3(Long)
+2018-04-23 12:00:50,147 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 12:37:58,080 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 12400 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 12:37:58,086 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 12:37:58,087 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 12:38:04,577 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.972 seconds (JVM running for 7.626)
+2018-04-23 15:55:48,040 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 184 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 15:55:48,057 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 15:55:48,058 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 15:55:57,641 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 10.469 seconds (JVM running for 11.384)
+2018-04-23 16:10:07,985 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 18880 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 16:10:07,990 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 16:10:07,990 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 16:10:13,912 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.413 seconds (JVM running for 7.13)
+2018-04-23 16:12:11,398 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 5148 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 16:12:11,403 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 16:12:11,404 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 16:12:18,725 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 7.904 seconds (JVM running for 8.672)
+2018-04-23 16:12:30,315 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select count(p.id) from product p 
+2018-04-23 16:12:30,363 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-23 16:12:30,375 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 16:12:30,377 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id order by p.id desc limit ?,? 
+2018-04-23 16:12:30,378 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 0(Integer), 5(Integer)
+2018-04-23 16:12:30,383 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-23 16:12:31,836 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id where p.id = ? 
+2018-04-23 16:12:31,837 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 35(Long)
+2018-04-23 16:12:31,840 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 16:12:31,849 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM sku_property WHERE catalog_id = ? 
+2018-04-23 16:12:31,850 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 16:12:31,852 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-23 16:12:33,273 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, sku_property_id, value FROM sku_property_value WHERE sku_property_id = ? 
+2018-04-23 16:12:33,274 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 4(Long)
+2018-04-23 16:12:33,275 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-23 16:12:33,280 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, type, sort FROM sku_property WHERE id = ? 
+2018-04-23 16:12:33,280 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 4(Long)
+2018-04-23 16:12:33,281 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 16:12:33,893 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, sku_property_id, value FROM sku_property_value WHERE sku_property_id = ? 
+2018-04-23 16:12:33,893 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 3(Long)
+2018-04-23 16:12:33,895 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-23 16:12:33,901 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, type, sort FROM sku_property WHERE id = ? 
+2018-04-23 16:12:33,902 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 3(Long)
+2018-04-23 16:12:33,904 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 16:28:28,331 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 10764 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 16:28:28,335 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 16:28:28,336 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 16:28:34,354 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.526 seconds (JVM running for 7.224)
+2018-04-23 16:29:24,260 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 4492 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 16:29:24,266 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 16:29:24,266 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 16:29:30,094 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.328 seconds (JVM running for 7.025)
+2018-04-23 16:30:08,109 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 2456 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 16:30:08,114 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 16:30:08,114 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 16:30:13,846 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.27 seconds (JVM running for 6.96)
+2018-04-23 16:30:36,816 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 14676 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 16:30:36,822 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 16:30:36,822 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 16:30:42,728 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.435 seconds (JVM running for 7.167)
+2018-04-23 16:33:22,714 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 11472 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 16:33:22,718 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 16:33:22,718 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 16:33:28,475 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.269 seconds (JVM running for 6.979)
+2018-04-23 16:34:14,747 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 8396 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 16:34:14,752 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 16:34:14,753 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 16:34:22,267 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 8.001 seconds (JVM running for 8.68)
+2018-04-23 16:35:30,072 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 17280 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 16:35:30,077 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 16:35:30,078 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 16:35:36,559 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.998 seconds (JVM running for 7.656)
+2018-04-23 16:36:06,717 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 13728 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 16:36:06,725 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 16:36:06,725 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 16:36:13,380 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 7.193 seconds (JVM running for 7.95)
+2018-04-23 16:50:45,497 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 18760 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 16:50:45,502 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 16:50:45,502 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 16:51:03,716 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 18.729 seconds (JVM running for 19.461)
+2018-04-23 16:53:58,227 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 9952 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 16:53:58,233 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 16:53:58,234 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 16:54:08,617 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 10.906 seconds (JVM running for 11.6)
+2018-04-23 16:56:29,862 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 11372 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 16:56:29,868 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 16:56:29,869 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 16:56:40,955 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 11.611 seconds (JVM running for 12.319)
+2018-04-23 16:58:03,405 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 2840 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 16:58:03,410 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 16:58:03,411 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 16:58:09,446 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.532 seconds (JVM running for 7.259)
+2018-04-23 17:01:00,246 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 16668 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 17:01:00,251 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 17:01:00,252 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 17:01:11,437 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 11.686 seconds (JVM running for 12.366)
+2018-04-23 17:07:06,676 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 17272 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 17:07:06,679 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 17:07:06,680 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 17:07:12,505 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.315 seconds (JVM running for 6.988)
+2018-04-23 17:07:29,524 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 19572 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 17:07:29,531 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 17:07:29,531 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 17:07:35,220 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.192 seconds (JVM running for 6.912)
+2018-04-23 17:09:43,190 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 1632 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 17:09:43,195 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 17:09:43,196 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 17:09:48,921 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.314 seconds (JVM running for 7.016)
+2018-04-23 17:36:59,782 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 14316 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 17:36:59,788 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 17:36:59,789 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 17:37:07,329 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 8.079 seconds (JVM running for 8.825)
+2018-04-23 17:37:15,586 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT name, p_id FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 17:37:15,603 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 17:37:15,619 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 17:37:54,707 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 3492 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 17:37:54,731 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 17:37:54,731 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 17:38:02,644 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 8.523 seconds (JVM running for 9.462)
+2018-04-23 17:39:08,985 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select count(p.id) from product p 
+2018-04-23 17:39:09,004 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-23 17:39:09,016 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 17:39:09,017 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id order by p.id desc limit ?,? 
+2018-04-23 17:39:09,018 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 0(Integer), 5(Integer)
+2018-04-23 17:39:09,023 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-23 17:39:11,035 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id where p.id = ? 
+2018-04-23 17:39:11,037 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 35(Long)
+2018-04-23 17:39:11,039 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 17:39:11,045 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM sku_property WHERE catalog_id = ? 
+2018-04-23 17:39:11,046 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 17:39:11,047 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-23 17:39:12,396 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, sku_property_id, value FROM sku_property_value WHERE sku_property_id = ? 
+2018-04-23 17:39:12,397 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 4(Long)
+2018-04-23 17:39:12,399 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-23 17:39:12,405 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, type, sort FROM sku_property WHERE id = ? 
+2018-04-23 17:39:12,405 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 4(Long)
+2018-04-23 17:39:12,407 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 17:39:13,009 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, sku_property_id, value FROM sku_property_value WHERE sku_property_id = ? 
+2018-04-23 17:39:13,010 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 3(Long)
+2018-04-23 17:39:13,011 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-23 17:39:13,016 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, type, sort FROM sku_property WHERE id = ? 
+2018-04-23 17:39:13,017 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 3(Long)
+2018-04-23 17:39:13,017 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 17:39:18,622 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT name, p_id FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 17:39:18,623 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 17:39:18,625 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 17:41:24,210 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select count(p.id) from product p 
+2018-04-23 17:41:24,212 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 
+2018-04-23 17:41:24,213 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 17:41:24,214 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id order by p.id desc limit ?,? 
+2018-04-23 17:41:24,214 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 0(Integer), 5(Integer)
+2018-04-23 17:41:24,218 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 5
+2018-04-23 17:41:47,021 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: select p.id,p.name,p.code,p.market_price,p.base_price, b.id as bid,b.name as bname, c.id as cid,c.name as cname from product p left join brand b on p.brand_id = b.id left join catalog c on p.catalog_id = c.id where p.id = ? 
+2018-04-23 17:41:47,022 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 35(Long)
+2018-04-23 17:41:47,025 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 17:41:47,029 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, sort, type FROM sku_property WHERE catalog_id = ? 
+2018-04-23 17:41:47,030 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 17:41:47,031 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 2
+2018-04-23 17:41:48,299 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, sku_property_id, value FROM sku_property_value WHERE sku_property_id = ? 
+2018-04-23 17:41:48,300 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 3(Long)
+2018-04-23 17:41:48,302 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-23 17:41:48,306 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, type, sort FROM sku_property WHERE id = ? 
+2018-04-23 17:41:48,306 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 3(Long)
+2018-04-23 17:41:48,308 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 17:41:48,663 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, sku_property_id, value FROM sku_property_value WHERE sku_property_id = ? 
+2018-04-23 17:41:48,664 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 4(Long)
+2018-04-23 17:41:48,666 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 3
+2018-04-23 17:41:48,673 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, catalog_id, name, type, sort FROM sku_property WHERE id = ? 
+2018-04-23 17:41:48,674 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 4(Long)
+2018-04-23 17:41:48,676 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 1
+2018-04-23 17:41:50,123 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT name, p_id FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 17:41:50,124 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 17:41:50,126 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 17:41:59,331 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT name, p_id FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 17:41:59,332 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 17:41:59,334 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 17:42:23,163 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT name, p_id FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 17:42:23,164 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 17:42:23,167 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 17:43:47,194 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT name, p_id FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 17:43:47,196 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 17:43:47,199 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 17:43:47,201 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT name, p_id FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 17:43:47,205 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 17:43:47,207 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 17:44:31,914 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 8520 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 17:44:31,921 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 17:44:31,921 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 17:44:39,600 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 8.204 seconds (JVM running for 8.868)
+2018-04-23 17:44:42,550 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 17:44:42,572 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 17:44:42,594 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 17:54:25,436 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 10520 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 17:54:25,441 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 17:54:25,441 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 17:54:34,483 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 9.547 seconds (JVM running for 10.273)
+2018-04-23 17:54:36,015 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 17:54:36,031 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 17:54:36,048 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 17:55:20,481 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 17:55:20,482 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 17:55:20,487 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 17:56:21,721 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 17:56:21,722 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 17:56:21,726 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 17:57:23,088 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 17:57:23,089 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 17:57:23,093 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 18:03:30,283 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on DESKTOP-C4M9DI8 with PID 17132 (H:\OpenSources\JavaApps\OpenSources\shop\shop-goods-server\target\classes started by Reimu in H:\OpenSources\JavaApps\OpenSources\shop\shop-parent)
+2018-04-23 18:03:30,289 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.1.RELEASE, Spring v4.3.6.RELEASE
+2018-04-23 18:03:30,290 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2018-04-23 18:03:36,039 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 6.3 seconds (JVM running for 6.995)
+2018-04-23 18:03:38,208 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 18:03:38,223 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 18:03:38,241 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 18:15:33,729 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 18:15:33,730 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 18:15:33,733 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 18:16:17,774 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 18:16:17,775 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 18:16:17,778 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 18:19:53,477 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 18:19:53,478 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 18:19:53,484 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 18:19:58,758 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 18:19:58,759 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 18:19:58,761 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 18:22:40,965 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 18:22:40,966 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 18:22:40,969 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4
+2018-04-23 18:28:52,094 DEBUG (BaseJdbcLogger.java:181)- ==>  Preparing: SELECT id, name, code, sort, p_id, is_parent FROM catalog WHERE find_in_set(id, getParentCatalog(?)) 
+2018-04-23 18:28:52,096 DEBUG (BaseJdbcLogger.java:181)- ==> Parameters: 8(Long)
+2018-04-23 18:28:52,100 DEBUG (BaseJdbcLogger.java:181)- <==      Total: 4

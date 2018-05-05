@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.shop.mapper.SkuPropertyValueMapper">
+    <resultMap id="BaseResultMap" type="cn.wolfcode.shop.domain.SkuPropertyValue">
+        <id column="id" property="id"/>
+        <result column="sku_property_id" property="skuPropertyId"/>
+        <result column="value" property="value"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        DELETE FROM sku_property_value
+        WHERE id = #{id}
+    </delete>
+    <insert id="insert" parameterType="cn.wolfcode.shop.domain.SkuPropertyValue" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO sku_property_value (sku_property_id, value)
+        VALUES (#{skuPropertyId}, #{value})
+    </insert>
+    <update id="updateByPrimaryKey" parameterType="cn.wolfcode.shop.domain.SkuPropertyValue">
+        UPDATE sku_property_value
+        SET sku_property_id = #{skuPropertyId},
+            value           = #{value}
+        WHERE id = #{id}
+    </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        SELECT
+            id,
+            sku_property_id,
+            value
+        FROM sku_property_value
+        WHERE id = #{id}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT
+            id,
+            sku_property_id,
+            value
+        FROM sku_property_value
+    </select>
+    <select id="getProValueByProId" resultMap="BaseResultMap">
+        SELECT
+            id,
+            sku_property_id,
+            value
+        FROM sku_property_value
+        WHERE sku_property_id = #{proId}
+    </select>
+</mapper>

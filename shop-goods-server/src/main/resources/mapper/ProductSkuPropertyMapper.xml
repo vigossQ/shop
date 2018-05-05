@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.shop.mapper.ProductSkuPropertyMapper">
+    <resultMap id="BaseResultMap" type="cn.wolfcode.shop.domain.ProductSkuProperty">
+        <id column="id" property="id"/>
+        <result column="product_sku_id" property="productSkuId"/>
+        <result column="value" property="value"/>
+        <result column="image" property="image"/>
+        <association property="skuProperty" javaType="skuProperty" column="sku_property_id"
+                     select="cn.wolfcode.shop.mapper.SkuPropertyMapper.selectByPrimaryKey"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        DELETE FROM product_sku_property
+        WHERE id = #{id}
+    </delete>
+    <insert id="insert" parameterType="cn.wolfcode.shop.domain.ProductSkuProperty" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO product_sku_property (product_sku_id, sku_property_id, value, image)
+        VALUES (#{productSkuId}, #{skuProperty.id}, #{value}, #{image})
+    </insert>
+    <update id="updateByPrimaryKey" parameterType="cn.wolfcode.shop.domain.ProductSkuProperty">
+        UPDATE product_sku_property
+        SET product_sku_id  = #{productSkuId},
+            sku_property_id = #{skuProperty.id},
+            value           = #{value},
+            image           = #{image}
+        WHERE id = #{id}
+    </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        SELECT
+            id,
+            product_sku_id,
+            sku_property_id,
+            value,
+            image
+        FROM product_sku_property
+        WHERE id = #{id}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT
+            id,
+            product_sku_id,
+            sku_property_id,
+            value,
+            image
+        FROM product_sku_property
+    </select>
+
+    <select id="getByProductSkuId" resultMap="BaseResultMap">
+        SELECT
+            id,
+            product_sku_id,
+            sku_property_id,
+            value,
+            image
+        FROM product_sku_property
+        WHERE product_sku_id = #{id}
+    </select>
+</mapper>

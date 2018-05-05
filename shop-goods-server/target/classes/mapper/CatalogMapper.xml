@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.shop.mapper.CatalogMapper">
+    <resultMap id="BaseResultMap" type="cn.wolfcode.shop.domain.Catalog">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="code" property="code"/>
+        <result column="sort" property="sort"/>
+        <result column="p_id" property="pId"/>
+        <result column="is_parent" property="isParent"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        DELETE FROM catalog
+        WHERE id = #{id}
+    </delete>
+    <insert id="insert" parameterType="cn.wolfcode.shop.domain.Catalog" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO catalog (name, code, sort, p_id, is_parent)
+        VALUES (#{name}, #{code}, #{sort}, #{pId}, #{isParent})
+    </insert>
+    <update id="updateByPrimaryKey" parameterType="cn.wolfcode.shop.domain.Catalog">
+        UPDATE catalog
+        SET name      = #{name},
+            code      = #{code},
+            sort      = #{sort},
+            p_id      = #{pId},
+            is_parent = #{isParent}
+        WHERE id = #{id}
+    </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        SELECT
+            id,
+            name,
+            code,
+            sort,
+            p_id,
+            is_parent
+        FROM catalog
+        WHERE id = #{id}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT
+            id,
+            name,
+            code,
+            sort,
+            p_id,
+            is_parent
+        FROM catalog
+        ORDER BY sort ASC
+    </select>
+    <select id="getChildCatalog" resultMap="BaseResultMap">
+        SELECT
+            id,
+            name,
+            code,
+            sort,
+            p_id,
+            is_parent
+        FROM catalog
+        WHERE p_id = #{catalogId}
+        ORDER BY sort ASC
+    </select>
+    <select id="getPropertyCount" resultType="java.lang.Integer">
+        SELECT count(id)
+        FROM property
+        WHERE catalog_id = #{catalogId}
+    </select>
+    <select id="getProductCount" resultType="java.lang.Integer">
+        SELECT count(id)
+        FROM product
+        WHERE catalog_id = #{catalogId}
+    </select>
+    <select id="getParentCatalog" resultMap="BaseResultMap">
+        SELECT
+            id,
+            name,
+            code,
+            sort,
+            p_id,
+            is_parent
+        FROM catalog
+        WHERE find_in_set(id, getParentCatalog(#{id}))
+    </select>
+</mapper>

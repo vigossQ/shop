@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.shop.mapper.InvoiceMapper">
+    <resultMap id="BaseResultMap" type="cn.wolfcode.shop.domain.Invoice">
+        <id column="id" property="id"/>
+        <result column="invoice_type" property="invoiceType"/>
+        <result column="invoice_head" property="invoiceHead"/>
+        <result column="user_id" property="userId"/>
+        <result column="order_id" property="orderId"/>
+        <result column="invoice_content" property="invoiceContent"/>
+        <result column="invoice_phone" property="invoicePhone"/>
+        <result column="invoice_email" property="invoiceEmail"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        DELETE FROM invoice
+        WHERE id = #{id}
+    </delete>
+    <insert id="insert" parameterType="cn.wolfcode.shop.domain.Invoice" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO invoice (invoice_type, invoice_head, user_id, order_id, invoice_content,
+                             invoice_phone, invoice_email)
+        VALUES (#{invoiceType}, #{invoiceHead}, #{userId}, #{orderId}, #{invoiceContent},
+                #{invoicePhone}, #{invoiceEmail})
+    </insert>
+    <update id="updateByPrimaryKey" parameterType="cn.wolfcode.shop.domain.Invoice">
+        UPDATE invoice
+        SET invoice_type    = #{invoiceType},
+            invoice_head    = #{invoiceHead},
+            user_id         = #{userId},
+            order_id        = #{orderId},
+            invoice_content = #{invoiceContent},
+            invoice_phone   = #{invoicePhone},
+            invoice_email   = #{invoiceEmail}
+        WHERE id = #{id}
+    </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        SELECT
+            id,
+            invoice_type,
+            invoice_head,
+            user_id,
+            order_id,
+            invoice_content,
+            invoice_phone,
+            invoice_email
+        FROM invoice
+        WHERE id = #{id}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT
+            id,
+            invoice_type,
+            invoice_head,
+            user_id,
+            order_id,
+            invoice_content,
+            invoice_phone,
+            invoice_email
+        FROM invoice
+    </select>
+</mapper>

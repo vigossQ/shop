@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>shop-parent</artifactId>
+        <groupId>cn.wolfcode</groupId>
+        <version>1.0.0</version>
+        <relativePath>../shop-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>shop-mobile</artifactId>
+
+    <dependencies>
+        <!--商品api-->
+        <dependency>
+            <groupId>cn.wolfcode</groupId>
+            <artifactId>shop-goods-api</artifactId>
+        </dependency>
+
+        <!--会员api-->
+        <dependency>
+            <groupId>cn.wolfcode</groupId>
+            <artifactId>shop-member-api</artifactId>
+        </dependency>
+
+        <!--订单api-->
+        <dependency>
+            <groupId>cn.wolfcode</groupId>
+            <artifactId>shop-order-api</artifactId>
+        </dependency>
+
+        <!-- Spring Boot Dubbo 依赖 -->
+        <dependency>
+            <groupId>com.gitee.reger</groupId>
+            <artifactId>spring-boot-starter-dubbo</artifactId>
+        </dependency>
+
+        <!--spring-boot-web依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+</project>

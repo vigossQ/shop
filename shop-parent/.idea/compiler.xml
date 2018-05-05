@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shop-common" />
+        <module name="shop-goods-api" />
+        <module name="shop-goods-server" />
+        <module name="shop-member-api" />
+        <module name="shop-member-server" />
+        <module name="shop-mgrsite" />
+        <module name="shop-mobile" />
+        <module name="shop-order-api" />
+        <module name="shop-order-server" />
+        <module name="shop-scheduler" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.7">
+      <module name="shop-common" target="1.6" />
+      <module name="shop-goods-api" target="1.6" />
+      <module name="shop-goods-server" target="1.8" />
+      <module name="shop-member-api" target="1.6" />
+      <module name="shop-member-server" target="1.8" />
+      <module name="shop-mgrsite" target="1.8" />
+      <module name="shop-mobile" target="1.6" />
+      <module name="shop-order-api" target="1.6" />
+      <module name="shop-order-server" target="1.8" />
+      <module name="shop-parent" target="1.6" />
+      <module name="shop-scheduler" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../shop-common/shop-common.iml" filepath="$PROJECT_DIR$/../shop-common/shop-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shop-goods-api/shop-goods-api.iml" filepath="$PROJECT_DIR$/../shop-goods-api/shop-goods-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shop-goods-server/shop-goods-server.iml" filepath="$PROJECT_DIR$/../shop-goods-server/shop-goods-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shop-member-api/shop-member-api.iml" filepath="$PROJECT_DIR$/../shop-member-api/shop-member-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shop-member-server/shop-member-server.iml" filepath="$PROJECT_DIR$/../shop-member-server/shop-member-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shop-mgrsite/shop-mgrsite.iml" filepath="$PROJECT_DIR$/../shop-mgrsite/shop-mgrsite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shop-mobile/shop-mobile.iml" filepath="$PROJECT_DIR$/../shop-mobile/shop-mobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shop-order-api/shop-order-api.iml" filepath="$PROJECT_DIR$/../shop-order-api/shop-order-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shop-order-server/shop-order-server.iml" filepath="$PROJECT_DIR$/../shop-order-server/shop-order-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-parent.iml" filepath="$PROJECT_DIR$/shop-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shop-scheduler/shop-scheduler.iml" filepath="$PROJECT_DIR$/../shop-scheduler/shop-scheduler.iml" />
+    </modules>
+  </component>
+</project>

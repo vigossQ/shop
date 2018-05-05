@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.wolfcode</groupId>
+    <artifactId>shop-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <modules>
+        <module>../shop-goods-api</module>
+        <module>../shop-goods-server</module>
+        <module>../shop-mgrsite</module>
+        <module>../shop-common</module>
+        <module>../shop-scheduler</module>
+        <module>../shop-mobile</module>
+        <module>../shop-member-server</module>
+        <module>../shop-member-api</module>
+        <module>../shop-order-api</module>
+        <module>../shop-order-server</module>
+    </modules>
+
+    <!--Spring Boot项目-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.1.RELEASE</version>
+    </parent>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--商品api-->
+            <dependency>
+                <groupId>cn.wolfcode</groupId>
+                <artifactId>shop-goods-api</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <!--公共项目-->
+            <dependency>
+                <groupId>cn.wolfcode</groupId>
+                <artifactId>shop-common</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <!--会员api-->
+            <dependency>
+                <groupId>cn.wolfcode</groupId>
+                <artifactId>shop-member-api</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <!--订单api-->
+            <dependency>
+                <groupId>cn.wolfcode</groupId>
+                <artifactId>shop-order-api</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+
+            <!-- Spring Boot Dubbo 依赖 -->
+            <dependency>
+                <groupId>com.gitee.reger</groupId>
+                <artifactId>spring-boot-starter-dubbo</artifactId>
+                <version>1.0.10</version>
+            </dependency>
+
+            <!--阿里巴巴的druid-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.0.25</version>
+            </dependency>
+
+            <!--spring-boot的mybatis依赖-->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>1.2.0</version>
+            </dependency>
+
+            <!--上传文件工具类-->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.4</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <!--红辣椒-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!--阿里巴巴fastjson-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.7</version>
+        </dependency>
+    </dependencies>
+
+</project>

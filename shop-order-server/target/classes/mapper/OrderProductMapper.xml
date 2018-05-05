@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.shop.mapper.OrderProductMapper">
+    <resultMap id="BaseResultMap" type="cn.wolfcode.shop.domain.OrderProduct">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="order_id" property="orderId" jdbcType="BIGINT"/>
+        <result column="sku_id" property="skuId" jdbcType="BIGINT"/>
+        <result column="product_name" property="productName" jdbcType="VARCHAR"/>
+        <result column="product_number" property="productNumber" jdbcType="SMALLINT"/>
+        <result column="product_price" property="productPrice" jdbcType="DECIMAL"/>
+        <result column="total_price" property="totalPrice" jdbcType="DECIMAL"/>
+        <result column="product_img" property="productImg" jdbcType="VARCHAR"/>
+        <collection property="orderProductPropertyList" ofType="orderProductProperty" column="id"
+                    select="cn.wolfcode.shop.mapper.OrderProductPropertyMapper.getOrderProductProperty"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        DELETE FROM order_product
+        WHERE id = #{id,jdbcType=BIGINT}
+    </delete>
+    <insert id="insert" parameterType="cn.wolfcode.shop.domain.OrderProduct" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO order_product (order_id, sku_id, product_name,
+                                   product_number, product_price, total_price,
+                                   product_img)
+        VALUES (#{orderId,jdbcType=BIGINT}, #{skuId,jdbcType=BIGINT}, #{productName,jdbcType=VARCHAR},
+                #{productNumber,jdbcType=SMALLINT}, #{productPrice,jdbcType=DECIMAL}, #{totalPrice,jdbcType=DECIMAL},
+                #{productImg,jdbcType=VARCHAR})
+    </insert>
+    <update id="updateByPrimaryKey" parameterType="cn.wolfcode.shop.domain.OrderProduct">
+        UPDATE order_product
+        SET order_id       = #{orderId,jdbcType=BIGINT},
+            sku_id         = #{skuId,jdbcType=BIGINT},
+            product_name   = #{productName,jdbcType=VARCHAR},
+            product_number = #{productNumber,jdbcType=SMALLINT},
+            product_price  = #{productPrice,jdbcType=DECIMAL},
+            total_price    = #{totalPrice,jdbcType=DECIMAL},
+            product_img    = #{productImg,jdbcType=VARCHAR}
+        WHERE id = #{id,jdbcType=BIGINT}
+    </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        SELECT
+            id,
+            order_id,
+            sku_id,
+            product_name,
+            product_number,
+            product_price,
+            total_price,
+            product_img
+        FROM order_product
+        WHERE id = #{id,jdbcType=BIGINT}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT
+            id,
+            order_id,
+            sku_id,
+            product_name,
+            product_number,
+            product_price,
+            total_price,
+            product_img
+        FROM order_product
+    </select>
+    <select id="getOrderProduct" resultMap="BaseResultMap">
+        SELECT *
+        FROM order_product
+        WHERE order_id = #{id}
+    </select>
+</mapper>

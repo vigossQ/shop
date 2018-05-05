@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.shop.mapper.UserInfoMapper">
+    <resultMap id="BaseResultMap" type="cn.wolfcode.shop.domain.UserInfo">
+        <id column="id" property="id"/>
+        <result column="nick_name" property="nickName"/>
+        <result column="real_name" property="realName"/>
+        <result column="head_img" property="headImg"/>
+        <result column="id_number" property="idNumber"/>
+        <result column="phone" property="phone"/>
+        <result column="email" property="email"/>
+        <result column="sex" property="sex"/>
+        <result column="birthday" property="birthday"/>
+        <result column="province" property="province"/>
+        <result column="city" property="city"/>
+        <result column="district" property="district"/>
+        <result column="regist_time" property="registTime"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        DELETE FROM user_info
+        WHERE id = #{id}
+    </delete>
+    <insert id="insert" parameterType="cn.wolfcode.shop.domain.UserInfo">
+        INSERT INTO user_info (id, nick_name, real_name, head_img, id_number, phone, email, sex,
+                               birthday, province, city, district, regist_time)
+        VALUES (#{id}, #{nickName}, #{realName}, #{headImg}, #{idNumber}, #{phone}, #{email}, #{sex},
+                       #{birthday}, #{province}, #{city}, #{district}, #{registTime})
+    </insert>
+    <update id="updateByPrimaryKey" parameterType="cn.wolfcode.shop.domain.UserInfo">
+        UPDATE user_info
+        SET nick_name   = #{nickName},
+            real_name   = #{realName},
+            head_img    = #{headImg},
+            id_number   = #{idNumber},
+            phone       = #{phone},
+            email       = #{email},
+            sex         = #{sex},
+            birthday    = #{birthday},
+            province    = #{province},
+            city        = #{city},
+            district    = #{district},
+            regist_time = #{registTime}
+        WHERE id = #{id}
+    </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        SELECT
+            id,
+            nick_name,
+            real_name,
+            head_img,
+            id_number,
+            phone,
+            email,
+            sex,
+            birthday,
+            province,
+            city,
+            district,
+            regist_time
+        FROM user_info
+        WHERE id = #{id}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT
+            id,
+            nick_name,
+            real_name,
+            head_img,
+            id_number,
+            phone,
+            email,
+            sex,
+            birthday,
+            province,
+            city,
+            district,
+            regist_time
+        FROM user_info
+    </select>
+</mapper>
